@@ -1,0 +1,11 @@
+
+<form [formGroup]="userform"  (ngSubmit)="validaUser()">
+ <input type="text" matInput [formControl]="uname"
+      placeholder="enter user name"> 
+<small>{{checkusername()}}</small> <br>
+<input type="password" matInput [formControl]="password"
+   placeholder="enter password">
+   <small>{{checkpassword()}}</small> <br>
+   <button type="submit">Sign In</button>
+   <input type="button" (click)="checking()" value="Check">
+</form>

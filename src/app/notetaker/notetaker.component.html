@@ -1,0 +1,26 @@
+
+<mat-expansion-panel class="matstyle">
+    <mat-expansion-panel-header>
+     <mat-panel-title>
+       Take Note
+     </mat-panel-title>
+     </mat-expansion-panel-header>
+     <div>
+       <mat-form-field>
+     <input type="text" matInput name="title"
+     placeholder="enter title" [(ngModel)]="note.title">
+        <textarea placeholder="enter message" 
+        [(ngModel)]="note.text">
+   
+        </textarea>
+       </mat-form-field>
+       <select [(ngModel)]="note.status">
+       <option value="Started"> sTarted</option>
+       <option value="Completed">Complteed</option>
+       </select>
+       <button mat-button color="accent" 
+       (click)="addmyNote()"> Add Note</button>
+       
+    </div>
+ </mat-expansion-panel>
+ 

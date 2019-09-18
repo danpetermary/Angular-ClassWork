@@ -1,0 +1,17 @@
+.matcontain
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:40vw;
+   justify-content: space-around;
+    margin:2px auto;
+}
+
+.clscard
+{
+     
+    
+    background-color: yellow;
+    
+}

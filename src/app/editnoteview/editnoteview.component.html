@@ -1,0 +1,12 @@
+<h6> I am inside dialog</h6>
+<form>
+<input type=text name="title" [(ngModel)]="noteobj.title">
+<input type=text name="text" [(ngModel)]="noteobj.text">
+<select name="status" [(ngModel)]="noteobj.status">
+    <option value="Not Completed">Not Completed</option>
+    <option value="Completed"> Completed </option>
+    <option value="Started">Started</option>
+</select>
+<button (click)="callupd()">Update</button>
+<button (click)="closeall()">Close</button>
+</form>

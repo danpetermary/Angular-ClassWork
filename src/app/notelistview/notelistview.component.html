@@ -1,0 +1,22 @@
+<div class="matcontain">
+   
+ <h5> Not Started Notes </h5> 
+    <app-mynote [ele]="nobj" *ngFor="let nobj of notstartednotes" class="clscard">
+    </app-mynote>> 
+  
+       
+ <h5> Completed Notes </h5> 
+ <app-mynote [ele]="nobj" *ngFor="let nobj of completenotes" class="clscard">
+</app-mynote>> 
+
+<h5>Started Notes</h5>
+<app-mynote [ele]="nobj" *ngFor="let nobj of startednotes" class="clscard">
+</app-mynote>> 
+
+
+       Error message is {{errMessage}}
+    
+     </div>
+    
+    
+  
